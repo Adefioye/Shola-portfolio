@@ -1,3 +1,59 @@
 .intro {
-  background-color: yellow;
+  background-color: white;
+  display: flex;
+}
+
+.intro .left {
+  flex: 0.5;
+}
+
+.intro .left .imgContainer {
+  width: 15rem;
+  height: 40rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: purple;
+}
+
+.intro .left .imgContainer img {
+  margin-top: 10rem;
+}
+
+.intro .right {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.intro .right h1 {
+  font-size: 3rem;
+}
+
+.intro .right .job-title {
+  height: 2.5rem;
+  color: rgb(241, 11, 241);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.intro .right .arrow-down {
+  transform: rotate(90deg);
+  font-size: 4rem;
+  color: grey;
+  font-weight: lighter;
+  position: absolute;
+  bottom: 0;
+  animation: arrowBlink 3s infinite;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
 }
