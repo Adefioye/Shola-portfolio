@@ -1,3 +1,55 @@
+@import "../../App.css";
+
 .portfolio {
-  background-color: pink;
+  background-color: white;
+}
+
+.portfolio h1 {
+  text-align: center;
+}
+
+.portfolio ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio ul li {
+  margin-top: 0.3rem;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+
+.portfolio .imageContainer {
+  margin: 1rem auto 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio .imageContainer img {
+  width: 17rem;
+  height: 12rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 2s ease;
+}
+
+/* Active classes */
+.portfolio ul .active {
+  background-color: var(--mainColor);
+  padding: 0.2rem;
+  border-radius: 5%;
+}
+
+.portfolio .imageContainer img:hover {
+  transform: scale(3);
+}
+
+.portfolio .imageContainer img:first-child,
+.portfolio .imageContainer img:nth-child(2),
+.portfolio .imageContainer img:nth-child(3) {
+  padding-top: 2rem;
 }
