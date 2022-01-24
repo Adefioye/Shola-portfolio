@@ -24,8 +24,8 @@
 }
 
 .logo {
-  font-size: 2rem;
   margin-right: 3rem;
+  text-align: center;
 }
 
 .itemContainer {
@@ -41,8 +41,14 @@
 }
 
 .itemContainer span {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
+}
+
+.itemContainer .logo-icon {
+  width: 10rem;
+  font-size: 50px;
+  text-align: center;
 }
 
 /* .right {
