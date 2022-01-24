@@ -78,7 +78,7 @@ function Portfolio() {
       </ul>
       <div className="imageContainer">
         {portfolio.map((item) => {
-          return <img src={item.img} alt="" />;
+          return <img key={item.id} src={item.img} alt="" />;
         })}
       </div>
     </div>

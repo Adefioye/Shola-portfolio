@@ -1,3 +1,48 @@
 .works {
-  background-color: green;
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.works .slider {
+  height: 500px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-out;
+  /* background-color: blue; */
+}
+
+.slider .container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .container .item {
+  width: 900px;
+  height: 100%;
+  background-color: red;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works .left {
+  height: 100px;
+  position: absolute;
+  left: 50px;
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.works .right {
+  height: 100px;
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
 }
