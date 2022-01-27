@@ -1,4 +1,3 @@
-import { Work } from "@material-ui/icons";
 import React from "react";
 import { useState } from "react";
 import { WorkGallery } from "./../../data";

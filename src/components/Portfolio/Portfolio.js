@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./Portfolio.css";
 import {
   hungerPortfolio,
@@ -12,9 +12,9 @@ import PortFolioList from "./PortFolioList";
 function Portfolio() {
   const [selected, setSelected] = useState("environment");
   const [portfolio, setPortfolio] = useState([]);
-  const highlight = selected ? "active" : "";
+  // const highlight = selected ? "active" : "";
 
-  const ref = useRef();
+  // const ref = useRef();
 
   useEffect(() => {
     switch (selected) {
@@ -68,6 +68,7 @@ function Portfolio() {
         {list.map((item) => {
           return (
             <PortFolioList
+              key={item.id}
               id={item.id}
               active={selected === item.id}
               title={item.title}

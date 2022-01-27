@@ -1,5 +1,5 @@
 import React from "react";
-import { Person, Email, Home } from "@material-ui/icons";
+import { Person, Email } from "@material-ui/icons";
 import "./Navbar.css";
 
 function Navbar({ menuOpen, setMenuOpen, openMenu }) {
@@ -7,8 +7,8 @@ function Navbar({ menuOpen, setMenuOpen, openMenu }) {
     <div className={`navbar ${openMenu}`} id="navbar">
       <div className="container">
         <div className="left">
-          <div href="#intro" className="itemContainer">
-            <Home className="logo-icon" />
+          <div href="#intro" className="logoContainer">
+            humanist
           </div>
           <div className="itemContainer">
             <Person className="icon" />

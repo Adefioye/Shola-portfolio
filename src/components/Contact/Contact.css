@@ -57,3 +57,19 @@
   color: green;
   font-size: 20px;
 }
+
+@media screen and (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact .right form input {
+    width: 200px;
+    height: 20px;
+  }
+
+  .contact .right form textarea {
+    width: 200px;
+    height: 100px;
+  }
+}

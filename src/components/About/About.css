@@ -33,3 +33,18 @@
   text-align: left;
   margin: 0 3rem;
 }
+
+@media screen and (max-width: 900px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about .left {
+    display: none;
+  }
+
+  .about .right {
+    align-items: center;
+    justify-content: center;
+  }
+}
